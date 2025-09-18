@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JS Fundamentals — Functions, Loops & DOM</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>JS Fundamentals Demo</h1>
+    <p class="subtitle">Variables, conditionals, functions, loops & DOM interactions</p>
+  </header>
+
+  <main class="wrap">
+
+    <!-- Part 1: Variables & Conditionals -->
+    <section class="card" id="part1">
+      <h2>Part 1 — Variables & Conditionals</h2>
+      <p>Type your name and age. We'll say hello and check if you're an adult.</p>
+      <div class="row">
+        <input id="firstName" placeholder="First name" />
+        <input id="lastName" placeholder="Last name" />
+        <input id="age" placeholder="Age (number)" type="number" min="0" />
+        <button id="greetBtn">Greet me</button>
+      </div>
+      <p id="greetingOutput" class="output">Greeting will appear here.</p>
+    </section>
+
+    <!-- Part 2: Functions & Calculation -->
+    <section class="card" id="part2">
+      <h2>Part 2 — Functions: Calculate Total</h2>
+      <p>We have some items with prices. Change quantity and click Calculate Total.</p>
+      <div id="itemsList" class="items"></div>
+
+      <div class="row">
+        <button id="calcBtn">Calculate Total</button>
+        <button id="addItemBtn">Add Random Item</button>
+        <button id="toggleThemeBtn">Toggle Theme</button>
+      </div>
+
+      <p id="totalOutput" class="output">Total will show here.</p>
+    </section>
+
+    <!-- Part 3: Loops & DOM creation -->
+    <section class="card" id="part3">
+      <h2>Part 3 — Loops</h2>
+      <p>Click to run a quick countdown using a <code>while</code> loop, and see cards created with a <code>forEach</code>.</p>
+      <div class="row">
+        <button id="countdownBtn">Start Countdown (5 → 0)</button>
+      </div>
+      <div id="countdownOutput" class="output">Countdown shows here.</div>
+      <div id="generatedCards" class="cards-grid"></div>
+    </section>
+
+    <!-- Part 4: DOM interactions summary -->
+    <section class="card" id="part4">
+      <h2>Part 4 — DOM Interactions</h2>
+      <ul>
+        <li><strong>Select elements</strong> (we use <code>getElementById</code> and <code>querySelector</code>).</li>
+        <li><strong>Listen to clicks</strong> (buttons trigger functions).</li>
+        <li><strong>Create elements</strong> (<code>createElement</code>) and add to the page.</li>
+      </ul>
+      <p class="muted">Open your browser console (F12 → Console) to see console.debug messages too.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Made for the JavaScript Fundamentals assignment • Try editing the JS and refresh</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
